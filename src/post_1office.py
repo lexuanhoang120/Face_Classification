@@ -1,3 +1,4 @@
+from subprocess import check_output
 import requests
 from datetime import datetime
 
@@ -48,5 +49,5 @@ def post_checkout_1office(code,date):
     print(re.text)
     del url, data, payload, files, headers, re
     return 0
-
+# post_checkout_1office(2401,"2022-08-22 08:02:55")
 
